@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LocalCoins - Ultimate Peer to Peer Crypto Exchange Mobile Application</title>
+  <!-- favicon -->
+  <link rel="icon" href="assets/images/favicon.png" sizes="16x16" type="image/png" />
+  <!-- bootstrap 5  -->
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+  <!-- fontawesome 5  -->
+  <link rel="stylesheet" href="assets/css/lib/font-awesome.css" />
+  <!-- lineawesome font -->
+  <link rel="stylesheet" href="assets/css/lib/line-awesome.css" />
+  <!-- Simplebar Js  -->
+  <link rel="stylesheet" href="assets/css/lib/simplebar.css" />
+  <link rel="stylesheet" href="assets/css/lib/file-explore.css" />
+
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#docNav" data-bs-offset="50">
+
+
+  <header class="mobile-header">
+    <div class="container">
+      <div class="row g-4 align-items-center justify-content-between">
+        <div class="col-6">
+          <!-- Logo  -->
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="images" class="img-fluid logo__is" />
+          </a>
+          <!-- Logo End -->
+        </div>
+        <div class="col-6">
+          <div class="text-end">
+            <button type="button" class="btn btn--sqr sidebar-toggler">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="doc">
+    <div class="doc__sidebar" id="docNav">
+      <div class="doc-logo">
+        <!-- Logo  -->
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="images" class="img-fluid logo__is" />
+        </a>
+        <!-- Logo End -->
+      </div>
+      <nav class="doc-nav" data-simplebar>
+        <ul class="list doc-nav__list">
+          <li>
+            <a href="#introduction" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="lar la-clone"></i> <span
+                  class="d-block">introduction</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#requirements" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-server"></i> <span
+                  class="d-block">requirements</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#installation" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-cog"></i> <span class="d-block">how to
+                  install </span></span> </a>
+          </li>
+          <li>
+            <a href="#folder" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-folder"></i> <span class="d-block">
+                  folder structure
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#screens" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-desktop"></i>
+                <span class="d-block">
+                  Screens
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#envEdit" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-desktop"></i>
+                <span class="d-block">
+                  Edit environment variable
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#setup" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-cog"></i>
+                <span class="d-block">
+                  App Setup
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#googleAuth" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-cog"></i>
+                <span class="d-block">
+                  Google Auth Setup
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#linkdinAuth" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-cog"></i>
+                <span class="d-block">
+                  Linkedin Auth Setup
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#publish" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-check-circle"></i>
+                <span class="d-block">
+                  Publish App
+                </span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#support" class="doc-nav__link nav-link">
+              <span class="list list--row align-items-center"><i class="las la-headset"></i>
+                <span class="d-block">
+                  Support
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        <p class="m-0 text--white px-3 text-center">Copyright © <a href="https://viserlab.com/"
+            class="t-link t-link--canvas">ViserLab</a> 2024</p>
+      </div>
+    </div>
+    <div class="doc__body">
+      <div id="introduction" class="section--sm section--first">
+        <div class="list">
+          <div class="doc-head">
+            <div class="doc-head__content">
+              <h5 class="doc-head__title">
+                LocalCoins
+              </h5>
+              <span class="doc-head__sub-title">
+                Ultimate Peer to Peer Crypto Exchange Platform
+              </span>
+            </div>
+          </div>
+          <div class="doc-body">
+            <ul class="list" style="--gap: 0.2rem">
+              <li><strong>Created :</strong> 2024-05-30</li>
+              <li>
+                <strong>By :</strong>
+                <a href="https://codecanyon.net/user/viserlab" class="t-link">Viserlab</a>
+              </li>
+              <li><strong>Email :</strong> <a class="t-link" href="mailto:support@viserlab.com">support@viserlab.com</a>
+              </li>
+            </ul>
+            <p class="mt-4 lg-text">
+              LocalCoins is a professional P2P crypto exchange Flutter(Android & IOS) mobile application. It’s developed
+              for those people who already have our Localcoins Laravel Application v2.0.
+            </p>
+
+            <p class="mt-4 lg-text">
+              This application is required for our web application. If you didn’t purchase the web app, please purchase
+              it by <a
+                href="https://codecanyon.net/item/localcoins-ultimate-peer-to-peer-crypto-exchange-platform/34781557"
+                target="_blank">clicking here</a>.
+            </p>
+
+            <blockquote class="blockquote text--accent">
+              If needed, we will update this App continuously and come with new features and security patches. We will
+              try to give the best user experience to all of our clients.
+            </blockquote>
+
+            <p class="mt-4 lg-text">
+              Thank you for purchasing <strong>LocalCoins</strong> .If you have any questions or queries that are not
+              answered in this document, please feel free to contact us via email. We will try to respond to you as soon
+              as possible. Thank you so much.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="requirements" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Requirements</h5>
+                  <span class="doc-head__sub-title">
+                    Follow the below requirements.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4 align-items-center">
+                <div class="col-xl-12">
+                  <div class="doc-body">
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li>Download and install Any one from these IDE(Android studio, Vs Code)</li>
+                      <li>Flutter and Dart must be successfully installed and setup on your device in order to edit this
+                        project.</li>
+                      <li>Install the Flutter and Dart plugins after setting up your editor</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="installation" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Installation</h5>
+                  <span class="doc-head__sub-title">
+                    Follow the below instruction to install the system.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4 align-items-center">
+                <div class="col-xl-12">
+                  <div class="doc-body">
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li>Unzip the downloaded project and open the project to the preferred IDE (Android Studio /
+                        Visual Code)</li>
+                      <li>Configure firebase project and paste the &nbsp; <b><em>google-services.json</em></b> &nbsp; file (Downloaded from Google
+                        Firebase) in &nbsp;
+                        <b>local_coin/android/app</b> &nbsp; directory/folder.
+                      </li>
+                      <li>On IDE click the pubspecs.yaml file then clicks on the Pub Get button top of the IDE to
+                        install the libraries.</li>
+                      <li>Make sure dart sdk is up to date</li>
+                      <li>To run the project, launch the emulator or attach a real android device.</li>
+                      <li>Then press the run button to start project (you can still open multi emulator at the same
+                        time)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="folder" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Folder Structure</h5>
+                  <span class="doc-head__sub-title">
+                    Folders and files structure are showing below
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4 align-items-center">
+                <div class="col-xl-12">
+                  <div class="doc-body">
+                    <ul class="file-tree">
+                      <li><a href="#">assets</a>
+                        <ul>
+
+                          <li>animation
+                            <ul></ul>
+                          </li>
+
+                          <li>fonts
+                            <ul></ul>
+                          </li>
+
+                          <li>icons
+                            <ul></ul>
+                          </li>
+
+                          <li>
+                            images <ul></ul>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li>lib
+                        <ul>
+
+                          <li>constants
+                            <ul>
+                              <li>mehtod.dart
+                              </li>
+                              <li>mystring.dart
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li><a href="#">core</a>
+                            <ul>
+                              <li>di_service <ul></ul>
+                              </li>
+                              <li>helper
+                                <ul></ul>
+                              </li>
+                              <li>route
+                                <ul></ul>
+                              </li>
+                              <li>theme
+                                <ul></ul>
+                              </li>
+                              <li>utils
+                                <ul></ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li><a href="#">data</a>
+                            <ul>
+                              <li>controller
+                                <ul></ul>
+                              </li>
+                              <li>model
+                                <ul></ul>
+                              </li>
+                              <li>repo
+                                <ul></ul>
+                              </li>
+                              <li>services
+                                <ul></ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li><a href="#">view</a>
+                            <ul>
+                              <li>components
+                                <ul></ul>
+                              </li>
+                              <li>screens
+                                <ul></ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>main.dart</li>
+                          <li>PushNotificationService.dart</li>
+                        </ul>
+                      </li>
+                      <li>pubspec.yaml</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="screens" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Screens</h5>
+                  <span class="doc-head__sub-title">
+                    Our app screens list are showing below
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4">
+                <div class="col-xl-12">
+                  <div class="doc-body h-auto">
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li>Splash Screen</li>
+                      <li>Login and Registration Screen</li>
+                      <li>Forget Password and Reset Password Screen</li>
+                      <li>Email and Sms Verification Screen</li>
+                      <li>Smart Homepage</li>
+                      <li>Wallet Screen</li>
+                      <li>Withdraw Screen</li>
+                      <li>Previous Withdrawals Screen</li>
+                      <li>Deposits Screen</li>
+                      <li>Marketplace Screen</li>
+                      <li>Trade Screen</li>
+                      <li>Public Profile Screen</li>
+                      <li>Trade Screen</li>
+                      <li>Trade Details Including Chat Screen</li>
+                      <li>Menu Screen</li>
+                      <li>Profile Screen</li>
+                      <li>Change Password Screen</li>
+                      <li>Withdrawal History Screen</li>
+                      <li>Transaction Screen</li>
+                      <li>Deposit Screen</li>
+                      <li>KYC (Know Your Client) Screen</li>
+                      <li>Privacy Policy Screen</li>
+                      <li>Advertisement Screen</li>
+                      <li>Advertisement Create Screen</li>
+                      <li>Advertisement Edit Screen</li>
+                      <li>Advertisement Reviews Screen</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="envEdit" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Edit environment variable</h5>
+                  <span class="doc-head__sub-title">
+                    Change Your environment variable
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid p-4">
+          <ul style="list-style: none;">
+            <li><i class="las la-dot-circle"></i> Open the <b> lib/environment.dart</b> file and modify your
+              necessary options.
+              <br>
+              <br>
+              <ul style="list-style:none">
+                <li>
+                  <img src="assets/images/app_setup/env.png" style="width: 80%;" alt="">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="setup" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Setup</h5>
+                  <span class="doc-head__sub-title">
+                    Application Setup
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4">
+                <div class="col-xl-10">
+                  <div class="doc-body h-auto">
+                    <div class="mt-4">
+                      <h5>1. Change App Name</h5>
+                      <p>
+                      <ul style="list-style: none;">
+                        <li><strong><i class="las la-dot-circle"></i> For Android</strong>
+                          <ul style="list-style:none">
+                            <li><i class="las la-circle"></i> Open AndroidMainfest.xml to IDE from android/app/src/main
+                            </li>
+                            <li><i class="las la-circle"></i> Change the label name inside the application tag from this
+                              file</li>
+                            <li>
+                              <img src="assets/images/app_name.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mt-4"><strong><i class="las la-dot-circle"></i> For IOS</strong>
+                          <ul style="list-style:none">
+                            <li><i class="las la-circle"></i> Open Info.plist file to IDE from ios/Runner</li>
+                            <li><i class="las la-circle"></i> Change the app name inside the dict. Please follow the
+                              below instruction.</li>
+                            <li>
+                              <img src="assets/images/app_name_ios.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      </p>
+                    </div>
+                    <div class="mt-4">
+                      <h5>2. Logo</h5>
+                      <ul style="list-style: none;">
+                        <li><strong><i class="las la-dot-circle"></i> For Android</strong>
+                          <ul style="list-style:none">
+                            <li><i class="las la-circle"></i> Go to /android/app/src/main/res and replace all mipmap
+                              folder with your generated icon android folder.</li>
+                            <li>
+                              <img src="assets/images/android_logo.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mt-4"><strong><i class="las la-dot-circle"></i> For IOS</strong>
+                          <ul style="list-style:none">
+                            <li><i class="las la-circle"></i> Go to /ios/Runner and replace Assets.xcassets with your
+                              generated Assets.xcassets folder.</li>
+                            <li>
+                              <img src="assets/images/ios_logo.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p><strong>Note:</strong> For different type of device we need to add different size of icon. So
+                        that you should to need to resize them. You can use <a href="https://appicon.co/"
+                          target="_blank">https://appicon.co/</a> platform to generate multiple size icons for android
+                        and ios. It will provide you the icon with a correct folder structure.</p>
+                    </div>
+                    <div class="mt-4">
+                      <h5>3. API Base URL</h5>
+                      <ul style="list-style: none;">
+                        <li><i class="las la-dot-circle"></i> Open lib/core/utils/url_container.dart file and change
+                          base url string
+                          <ul style="list-style:none">
+                            <li>
+                              <img src="assets/images/base_url.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-4">
+                      <h5>4. Change App Color</h5>
+                      <ul style="list-style: none;">
+                        <li><i class="las la-dot-circle"></i> Open lib/core/utils/my_colorl.dart folder and Replace the
+                          value in the primary Color field with the prepared color code. From here, you can easily
+                          change the color of something else.
+                          <ul style="list-style:none">
+                            <li>
+                              <img src="assets/images/color.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-4">
+                      <h5>5. Change Package Name</h5>
+                      <ul style="list-style: none;">
+                        <li><i class="las la-dot-circle"></i> Right click on project folder and click on Replace in
+                          Files
+                          <ul style="list-style:none">
+                            <li>
+                              <img src="assets/images/package_1.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                        <li><i class="las la-dot-circle"></i> Type dev.vlab.com.local_coin in the first indicated box
+                          and
+                          your own package name in the second marked box. Then click Replace All button
+                          <ul style="list-style:none">
+                            <li>
+                              <img src="assets/images/package_2.png" class="w-100 mt-3" alt="">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="googleAuth" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Google Auth Setup</h5>
+                  <span class="doc-head__sub-title">
+                    Setup Your Google Auth
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <ul style="list-style: none;">
+
+
+            <li><i class="las la-circle"></i> After Clicking All Products</li>
+
+            <br>
+            <img src="assets/images/firebase/PRODUCTS/1.png" style="width: 70%;" alt="">
+            <br>
+            <br>
+            <li><i class="las la-circle"></i> Click on <b>Authentication</b></li> <br>
+            <img src="assets/images/firebase/PRODUCTS/auth_1.png" style="width: 70%;" alt="">
+            <br>
+            <br>
+            <li><i class="las la-circle"></i> Click on <b>Get Started</b></li> <br>
+            <img src="assets/images/firebase/PRODUCTS/auth_2.png" style="width: 70%;" alt="">
+
+            </li>
+            <br> <br>
+            <li><i class="las la-circle"></i> Click on <b>Add New Provider</b></li> <br>
+            <li>
+              <img src="assets/images/firebase/auth/0.png" style="width: 70%;" alt="">
+            </li>
+            <br>
+            <br>
+            <li><i class="las la-circle"></i> Click on <b>Google</b></li> <br>
+            <li>
+              <img src="assets/images/firebase/auth/1.png" style="width: 70%;" alt="">
+            </li>
+            <br>
+            <br>
+            <li><i class="las la-circle"></i> Enable And Slected an <b>Email</b> and click on <b>Save
+                Button</b></li>
+            <li>
+              <img src="assets/images/firebase/auth/2.png" style="width: 70%;" alt=""> <br>
+
+              <br>
+
+
+
+            <li><i class="las la-circle"></i> Auth Setup <b>Done</b></li>
+            <li class="mt-4"><i class="las la-circle"></i> Now You Need To Setup
+              <a href="#sha1key"><b>SHA-1</b></a> Key setup
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+      <div id="sha1key" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">SHA-1 & SHA256</h5>
+                  <span class="doc-head__sub-title">
+                     Generate SHA-1 & SHA256 KEY
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sha1key" id="add" class="mt-4 p-4">
+          <strong> Open a Terminal:</strong>  
+  
+          <ul style="list-style:none">
+            <li>Open a terminal or command prompt in your project's root directory where the gradlew
+              script is located.
+              <br>
+              <br>
+              <div style="background-color: antiquewhite;padding: 20px">
+                CMD: <b> cd android</b>
+              </div>
+              <br>
+              Run the Gradle Signing Report Task:
+              <br>
+              In the terminal, run the following command:
+              <br>
+              Generate key code
+            </li>
+            <div style="background-color: antiquewhite;padding: 20px">
+              CMD: <b style="margin-left: 10px;"> ./gradlew signingReport</b>
+  
+            </div><br>
+            <img src="assets/images/app_setup/gradle_2.png" style="width: 50%;" alt="">
+            <br><br>
+            <li>To Generate Release SHA-1 KEY add <b>keystore.properties</b> in you app
+            </li>
+            <br><br>
+            <li>Create the <b>key.properties</b> File:
+              <br>
+  
+              First, create a new file named <b>key.properties</b> in the <b>android</b> directory of your
+              Flutter project.
+            </li>
+            <li>
+              <br>
+            <li>
+            <li>Edit <b>key.properties</b> File
+              <br>
+              Open the key.properties file in a text editor, and add the necessary configuration
+              properties. A common use case for this file is to store the signing configuration for your
+              Android app. Here's an example of what the key.properties file might look like for
+            </li>
+            <br>
+            <li>
+              <div style="background-color: antiquewhite;padding: 20px">
+                <br>
+                storeFile=/path/to/your/keystore.jks
+                <br>
+                storePassword=your_keystore_password
+                <br>
+                keyAlias=your_key_alias
+                <br>
+                keyPassword=your_key_password
+                <br>
+              </div> <br>
+  
+              <h5>Demo</h5>
+              <img src="assets/images/app_setup/gradle.png" style="width: 50%;" alt="">
+  
+  
+            </li>
+          </ul>
+  
+  
+  
+  
+          <ul style="list-style:none">
+            <h5>Now Put This Key in Firebase App</h5>
+            <li><i class="las la-circle"></i>Before putting this key, make sure your Firebase is connected
+              to your Flutter app, or read this <a href="#flutterCli">Firebase setup with CLI Step</a>.</b>
+            </li>
+            <b>
+              <h5>Fingerprint SHA-1 and SHA-256 key add here</h5>
+              <img src="assets/images/app_setup/add_finger.png" style="width: 50%;" alt="">
+            </b>
+  
+          </ul>
+  
+        </div>
+      </div>
+
+
+      <div id="linkdinAuth" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Linkdin Auth Setup</h5>
+                  <span class="doc-head__sub-title">
+                    Setup Your Linkdin Auth
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <ul style="list-style: none;">
+            <li><i class="las la-dot-circle"></i> Setting up social login with LinkedIn for a project
+              typically involves several steps. Here's a general guide to help you set it up:
+              <br>
+              <br>
+              <ul style="list-style:none">
+                <li>
+                  <b>Create a LinkedIn App:</b>
+                  <ul>
+                    <li>
+                      Go to the LinkedIn Developer portal: <a
+                        href="https://developer.linkedin.com/">LinkedIn Developer</a> </li>
+                    <li>
+                      Sign in with your LinkedIn account or create one if you don't have it. </li>
+                    <li> Create a new app by clicking on the "Create App" button. </li>
+                    <li> Fill in the required details like App name, description, logo, etc.</li>
+                    <li> Specify the Authorized Redirect URLs where LinkedIn will send the user after they
+                      authorize the app.</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Note down API credentials:</b>
+                  <ul>
+                    <li>
+                      Once your app is created, note down the Client ID and Client Secret. You'll need these
+                      to authenticate your app.</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <b>Configure OAuth2:</b>
+                  <ul>
+                    <li>
+                      LinkedIn uses OAuth2 for authentication. Make sure your project supports OAuth2 and
+                      you have the necessary libraries or frameworks installed.</li>
+
+                  </ul>
+                </li>
+                <li>
+                  <b>Integrate LinkedIn Login into your project:</b>
+                  <ul>
+                    <li>
+                      Install any required libraries or SDKs for LinkedIn integration in your project. </li>
+                    <li>
+                      Follow the documentation provided by LinkedIn or the library you're using to integrate
+                      LinkedIn login functionality into your project. </li>
+                    <li> Create a new app by clicking on the "Create App" button. </li>
+                    <li> Typically, this involves configuring your OAuth2 client with the client ID and
+                      secret you obtained earlier, specifying the scopes you need (e.g., email, profile),
+                      and setting up the redirect URLs.</li>
+                    <li> Implement the necessary logic to initiate the LinkedIn login process when the user
+                      clicks on the login button on your website or application.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="publish" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Publish App</h5>
+                  <span class="doc-head__sub-title">
+                    Follow below instruction to publish the app
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4">
+                <div class="col-xl-6">
+                  <div class="doc-body h-auto">
+                    <h5>1. Android</h5>
+                    <p>Follow the guidelines in the following link to publish the app to Play Store.</p>
+                    <p>PlayStore: <a href="https://flutter.dev/docs/deployment/android"
+                        target="_blank">https://flutter.dev/docs/deployment/android</a></p>
+                    <h5 class="mt-5">2. IOS</h5>
+                    <p>Follow the guidelines in the following link to publish the app to AppStore.</p>
+                    <p>AppStore: <a href="https://flutter.dev/docs/deployment/ios"
+                        target="_blank">https://flutter.dev/docs/deployment/ios</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="support" class="section--sm">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="doc-head">
+                <div class="doc-head__content">
+                  <h5 class="doc-head__title">Support</h5>
+                  <span class="doc-head__sub-title">
+                    Support information details
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-4">
+                <div class="col-xl-6">
+                  <div class="doc-body h-auto">
+                    <p>
+                      Once again, thank you so much for purchasing this App. As I said at the beginning, I'd be glad to
+                      help you if you have any questions relating to this App. No guarantees, but I'll do my best to
+                      assist. If you have any queries, please feel free to contact us at Support Center.
+                    </p>
+                    <p class="m-0 xl-text">
+                      Email Us:
+                      <a href="https://viserlab.com/support" class="t-link">
+                        https://viserlab.com/support
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap 5 js -->
+  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+  <!-- Simplebar Js  -->
+  <script src="assets/js/lib/simplebar.js"></script>
+  <script src="assets/js/lib/file-explore.js"></script>
+  <!-- main js -->
+  <script src="assets/js/app.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".file-tree").filetree();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "274514992002",
+    "project_id": "flutter-prime-df1c5",
+    "storage_bucket": "flutter-prime-df1c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274514992002:android:3523edfa53d5f9ae00cd9b",
+        "android_client_info": {
+          "package_name": "dev.vlab.flutter_prime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274514992002-3bf319q74c3jhe9ib460dc0ovbnt4og5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.vlab.flutter_prime",
+            "certificate_hash": "c5682c8281d41174738037e755afba6d19d0460f"
+          }
+        },
+        {
+          "client_id": "274514992002-tgpauos01chucti1nh577brlblnv94br.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.vlab.flutter_prime",
+            "certificate_hash": "83addae3ae21e4ea91d60576e3e546a747f1fb14"
+          }
+        },
+        {
+          "client_id": "274514992002-n8dnnbu3lr1rlo2209j654vd7ijm7nvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNHSyxSR1BN8AMZgUI0g9d_11ILLv45JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274514992002-n8dnnbu3lr1rlo2209j654vd7ijm7nvt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "274514992002-rqngr4pijgh7m6nvmqr3baq221ogqfmu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterPrime"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274514992002:android:deb28e1c360b561900cd9b",
+        "android_client_info": {
+          "package_name": "dev.vlab.localcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274514992002-n8dnnbu3lr1rlo2209j654vd7ijm7nvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNHSyxSR1BN8AMZgUI0g9d_11ILLv45JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274514992002-n8dnnbu3lr1rlo2209j654vd7ijm7nvt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "274514992002-rqngr4pijgh7m6nvmqr3baq221ogqfmu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterPrime"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
